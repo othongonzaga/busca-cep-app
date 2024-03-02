@@ -72,7 +72,7 @@ export default function App(){
           <Text style={styles.itemText}>Bairro: {cepUser.bairro}</Text>
           <Text style={styles.itemText}>Cidade: {cepUser.localidade}</Text>
           <Text style={styles.itemText}>Estado: {cepUser.uf}</Text>
-          <Text style={styles.itemText}>Estado: {cepUser.ddd}</Text>          
+          <Text style={styles.itemText}>DDD: {cepUser.ddd}</Text>          
         </View>
       }
 
