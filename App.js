@@ -36,7 +36,7 @@ export default function App(){
 
   return(
     <SafeAreaView style={styles.container}>
-      <View style={{alignItems: 'center'}}>
+      <View style={{alignItems: 'center', paddingTop:20,}}>
         <Text style={styles.text}>Digite o cep desejado</Text>
         <TextInput
         style={styles.input}
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   container:{
     flex:1,
     padding: 25,
-    backgroundColor: '#D3D3D3'
+    backgroundColor: '#D3D3D3',
   },
   text:{
     marginTop: 25,
@@ -94,35 +94,40 @@ const styles = StyleSheet.create({
   },
   input:{
     backgroundColor: '#FFF',
-    borderWidth: 0,
     borderRadius: 15,
+    borderWidth: 1,
     width: '90%',
     padding: 10,
     fontSize: 18
   },
   areaBtn:{
     alignItems: 'center',
+    justifyContent: 'center',
     flexDirection: 'row',
-    marginTop: 15,
-    justifyContent: 'space-around'
+    marginTop: 25,
+    justifyContent: 'space-around',
+    paddingBottom: 50
   },
   botao:{
    height: 50,
    justifyContent: 'center',
    alignItems: 'center',
    padding: 10,
-   borderRadius: 5,
+   borderRadius: 15,
   },
   botaoText:{
     fontSize: 22,
     color:'#FFF'
   },
   resultado:{
-    flex:1,
+    flex:0.8,
     justifyContent:'center',
-    alignItems:'center'
+    alignItems:'center',
+    backgroundColor: '#fff',
+    borderRadius: 30,
   },
   itemText:{
-    fontSize: 22,
+    fontSize: 21,
+    textAlign: 'center'
   }
 });
